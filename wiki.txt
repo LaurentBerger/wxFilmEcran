@@ -1,0 +1,29 @@
+{{ébauche|logiciel}}
+{{Infobox Logiciel
+ | nom = wxFilmEcran
+ | dernière version = 1.0 
+ | date de dernière version = {{Date|15|Avril|2015|en informatique}}
+ | environnement = [[Microsoft Windows|Windows]Linux|Linux]]
+ | langue =  Français [[Anglais]](non officielle)
+ | type = [[Screencast]]
+ | licence = [[GNU GPL]]
+ | site web = http://perso.univ-lemans.fr/~berger/wxFilmEcran/
+}}
+'''wxFilmEcran''' est un [[logiciel libre]] de [[screencasting|capture vidéo d'écran]] sous licence [[GNU GPL]] conçu pour capturer l'[[Écran d'ordinateur|écran]]. 
+
+wxFilmEcran vous permet d’enregistrer dans un fichier vidéo .mp4 utilisant le codec H264 tout ce qui se passe sur l’écran de l’ordinateur  pendant un temps donné. Pour utiliser ce logiciel il faut installer le logiciel [https://www.ffmpeg.org/ FFMPEG].
+L'origine de la zone de l'écran enregistrée est en haut à gauche. La taille est fixée par l'utilisateur.
+Il n'est pas possible d'enregistrer le son.
+
+
+
+== Voir aussi ==
+* [[RecordMyDesktop]] : logiciel libre similaire disponible sous [[Linux]]
+* [[CamStudio]] : logiciel libre similaire disponible sous [[Windows]]
+
+{{Portail|logiciels libres}}
+
+[[Catégorie:Logiciel vidéo]]
+[[Catégorie:Logiciel libre sous licence GPL]]
+[[Catégorie:Logiciel pour Windows]]
+[[Catégorie:Produit lancé en 2015]]
