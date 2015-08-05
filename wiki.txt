@@ -13,7 +13,7 @@
 
 wxFilmEcran vous permet d’enregistrer dans un fichier vidéo .mp4 utilisant le codec H264 tout ce qui se passe sur l’écran de l’ordinateur  pendant un temps donné. Pour utiliser ce logiciel il faut installer le logiciel [https://www.ffmpeg.org/ FFMPEG].
 L'origine de la zone de l'écran enregistrée est en haut à gauche. La taille est fixée par l'utilisateur.
-Il n'est pas possible d'enregistrer le son.
+Il n'est pas possible pour l'insttant d'enregistrer le son.
 
 
 

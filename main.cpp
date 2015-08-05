@@ -139,6 +139,7 @@ IMPLEMENT_APP(FilmEcran)
 
 bool FilmEcran::OnInit()
 {
+
 if (!wxApp::OnInit())
 	return false;
 wxInitAllImageHandlers();
@@ -462,7 +463,7 @@ void Controle::DebutFilm(wxCommandEvent& WXUNUSED(event))
 	else
 		nom.Printf("%s%d", nom, m.GetSecond());
 		
-	cmd.Printf("\"%s\" -f rawvideo -pixel_format rgb24 -video_size %dx%d -i \"tcp://127.0.0.1:%d\" -codec:v libx264  %sVideo%s.mp4", cmdFFMPEG, tailleVideo.GetWidth(), tailleVideo.GetHeight(), indPort,videoDst,nom);
+	cmd.Printf("\"%s\" -f rawvideo -pixel_format rgb24  -video_size %dx%d -i \"tcp://127.0.0.1:%d\" -codec:v libx264 -pix_fmt yuv420p %sVideo%s.mp4", cmdFFMPEG, tailleVideo.GetWidth(), tailleVideo.GetHeight(), indPort,videoDst,nom);
 	wxExecute(cmd, wxEXEC_ASYNC | wxEXEC_HIDE_CONSOLE);
 	m_text->SetBackgroundColour(wxColour(255, 0, 0));
 	m_text->Refresh();
