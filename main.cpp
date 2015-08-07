@@ -549,13 +549,15 @@ void Controle::EnvoyerEcran(wxTimerEvent &event)
 
 		int height = tailleVideo.GetHeight();
 		int width = tailleVideo.GetWidth();
-
+        wxCursor c=GetCursor();
+        wxPoint p=wxGetMousePosition();
 		wxBitmap copieEcran(width, height, -1);
-
+        wxBitmap curseur(*wxSTANDARD_CURSOR);
 		wxMemoryDC memDC;
 
 		memDC.SelectObject(copieEcran);
 		memDC.Blit(0, 0,width,height,&dcScreen,0, 0);
+		memDC.DrawBitmap(curseur,p.x, p.y);
 		int nb = width*height*3;
 		memDC.SelectObject(wxNullBitmap);
 
